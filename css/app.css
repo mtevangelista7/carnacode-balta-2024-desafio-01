@@ -13,7 +13,7 @@
 .container {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 100dvh;
 }
 
 .content {
@@ -103,4 +103,47 @@ body {
     font-size: 16px;
     font-weight: 300;
     color: #666666;
+}
+
+.backgroud-main {
+    background-color: #2E1462;
+}
+
+.main-div-content-page {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;      
+}
+
+.subtitle-login {
+    font-size: 16px;
+    color: #666666;
+    font-weight: 400;
+    text-align: center;
+    margin: 5px 0px 10px 0px;
+}
+
+.div-img-logo {
+    padding: 10px;
+    border: solid 3px #45FEFE;
+    border-radius: 30px;
+    background-color: white;
+    height: 90px;
+    width: 90px;
+    align-self: center;
+}
+
+.img-imc-logo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.flutuante {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    color: white;
 }
