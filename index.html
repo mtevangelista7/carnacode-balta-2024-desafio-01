@@ -1,26 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
     <title>IMC</title>
+
 </head>
 
 <body>
-    <div>ITEM 1</div>
-    <div class="flex flex-column">
-        <div>ITEM 2.1</div>
-        <div>ITEM 2.2</div>
-        <div>ITEM 2.3</div>
+    <div class="container">
+        <div class="content">
+
+            <div class="flex flex-column">
+                <div>
+                    <h1 class="main-text">Cálculo de IMC</h1>
+                </div>
+
+                <div class="group-input" style="align-items: center;">
+                    <input placeholder="Altura" class="main-input" type="text" />
+                </div>
+                <div class="group-input">
+                    <input placeholder="Peso" class="main-input" type="text" />
+                </div>
+                <div class="group-input">
+                    <input placeholder="Sexo" class="main-input" type="text" />
+                </div>
+
+                <div style="margin-top: 15px; margin-bottom: 15px;">
+                    <input type="checkbox" class="input-checkbox" id="65mais" name="65mais" value="65mais" />
+                    <label class="label-checkbox" for="65mais">Eu tenho 65 anos ou mais</label>
+                </div>
+
+                <div>
+                    <button class="main-button">Calcular meu IMC</button>
+                </div>
+                <div>
+                    <button class="second-button">Entenda o cálculo</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div>
-        <input class="input" type="text" />
-    </div>
-    <div>ITEM 4</div>
-    <div>ITEM 5</div>
-    <div>ITEM 6</div>
+
 </body>
 
 </html>
