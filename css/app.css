@@ -20,6 +20,7 @@
     padding: 20px;
     max-width: 800px;
     width: 100%;
+    margin-top: 50px;
 }
 
 h1 {
@@ -59,7 +60,7 @@ body {
 }
 
 .group-input {
-    width:  100%;
+    width: 100%;
     display: flex;
     align-self: center;
 }
@@ -112,7 +113,7 @@ body {
 .main-div-content-page {
     background: white;
     padding: 15px;
-    border-radius: 8px;      
+    border-radius: 8px;
 }
 
 .subtitle-login {
@@ -146,4 +147,33 @@ body {
     transform: translate(-50%, -50%);
     border-radius: 20px;
     color: white;
+}
+
+
+/* animations */
+
+.en-animate {
+    animation-duration: 0.55s;
+    animation-delay: 0.3s;
+    animation-name: animate-fade;
+    animation-fill-mode: backwards;
+}
+
+.en-animate.glow {
+    animation-name: en-animate-glow;
+    animation-timing-function: ease;
+}
+
+@keyframes en-animate-glow {
+    0% {
+        opacity: 0;
+        filter: brightness(3) saturate(3);
+        transform: scale(0.6, 0.6);
+    }
+
+    100% {
+        opacity: 1;
+        filter: brightness(1) saturate(1);
+        transform: scale(1, 1);
+    }
 }
